@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Navigation Bar */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.4s ease;
+    z-index: 1000;
+}
+
+#navbar.scrolled {
+    background: #000;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+    height: 100vh;
+    padding: 120px 20px 20px;
+}
+
+/* Section Colors */
+#home { background: #222; color: white; }
+#about { background: #f4f4f4; }
+#services { background: #ffffff; }
+#contact { background: #ddd; }
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+}
